@@ -1,5 +1,5 @@
 
-<div class="container CustomerDetails">
+<div class="container StudentDetails">
     <div class="row std">
       <div class="col-lg-12">
         <h3><b>Student Details</b></h3>
@@ -67,8 +67,12 @@
         <div class="col-lg-7"></div>
         <div class="col-lg-5"> 
         
-        <button type="button" mdbBtn color="info" rounded="true" data-toggle="modal" data-target="#basicExample" (click)="frame.show()"
+            <a routerLink='/home'> <button type="button" mdbBtn color="default" mdbWavesEffect>Back</button></a>
+
+        <button type="button" mdbBtn color="success" rounded="true" data-toggle="modal" data-target="#basicExample" (click)="frame.show()"
         mdbWavesEffect>Add</button>
+
+        
         
         <div mdbModal #frame="mdbModal" class="modal fade left" id="frameModalTop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
           aria-hidden="true">
@@ -77,11 +81,12 @@
             
   
               <div class="modal-footer d-flex justify-content-center">
-                <button mdbBtn color="default" class="waves-light" mdbWavesEffect>Succesfull..!!</button>
+                <button mdbBtn color="success" class="waves-light" mdbWavesEffect>Submit..!!</button>
               </div>
             </div>
           </div>
         </div>
+
       </div>   
       </div>
     </div>

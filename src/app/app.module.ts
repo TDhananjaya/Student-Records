@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { AddStudentComponent } from './add-student/add-student.component';
+import { AddMarksComponent } from './add-marks/add-marks.component';
 
 @NgModule({
   
@@ -14,7 +15,8 @@ import { AddStudentComponent } from './add-student/add-student.component';
     AppComponent,
     LoginComponent,
     HomeComponent,
-    AddStudentComponent
+    AddStudentComponent,
+    AddMarksComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +34,10 @@ import { AddStudentComponent } from './add-student/add-student.component';
         path: 'Addstd',
         component: AddStudentComponent
       },
+      {
+        path: 'addmarks',
+        component: AddMarksComponent
+      }
 
     ])
   ],

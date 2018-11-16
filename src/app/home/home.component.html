@@ -1,13 +1,14 @@
+
 <!--Navbar-->
 <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark blue">
 
     <!-- Navbar brand -->
-    <mdb-navbar-brand><a class="navbar-brand">Student Record Book</a></mdb-navbar-brand>
+    <mdb-navbar-brand><a class="navbar-brand" href="#"><b>Student Record Book</b></a></mdb-navbar-brand>
     <links>
 
         <!-- Links -->
         <ul class="navbar-nav mr-auto">
-            <button type="button" mdbBtn color="light" mdbWavesEffect>Logout</button>
+                <a routerLink='/'> <button type="button" mdbBtn color="light" mdbWavesEffect>Logout</button></a>
         </ul>
         <!-- Links -->
         
@@ -20,7 +21,8 @@
   <div class="col-lg-5"></div>
   <div class="col-lg-2">
   <div class="addstd">
-      <button type="button" mdbBtn color="primary" mdbWavesEffect>Add Student</button>
+      
+      <a routerLink='/Addstd'><button type="button" mdbBtn color="primary" mdbWavesEffect>Add Student</button></a>
   </div>
 </div>
 <div class="col-lg-5"></div>
@@ -30,8 +32,18 @@
     <div class="col-lg-5"></div>
     <div class="col-lg-2">
     <div class="addmarks">
-        <button type="button" mdbBtn color="primary" mdbWavesEffect>Add Marks</button>
+            <a routerLink='/addmarks'><button type="button" mdbBtn color="primary" mdbWavesEffect>Add Marks</button></a>
     </div>
   </div>
   <div class="col-lg-5"></div>
   </div>
+
+  <div class="row">
+      <div class="col-lg-5"></div>
+      <div class="col-lg-2">
+      <div class="stat">
+          <button type="button" mdbBtn color="primary" mdbWavesEffect>Statistics</button>
+      </div>
+    </div>
+    <div class="col-lg-5"></div>
+    </div>
