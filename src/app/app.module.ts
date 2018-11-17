@@ -11,6 +11,8 @@ import { AddMarksComponent } from './add-marks/add-marks.component';
 
 import { Semester2Component } from './semester2/semester2.component';
 import { Semester3Component } from './semester3/semester3.component';
+import { StatisticsComponent } from './statistics/statistics.component';
+import { AvarageComponent } from './avarage/avarage.component';
 
 @NgModule({
   
@@ -21,7 +23,9 @@ import { Semester3Component } from './semester3/semester3.component';
     AddStudentComponent,
     AddMarksComponent,
     Semester2Component,
-    Semester3Component
+    Semester3Component,
+    StatisticsComponent,
+    AvarageComponent
   ],
   imports: [
     BrowserModule,
@@ -50,6 +54,10 @@ import { Semester3Component } from './semester3/semester3.component';
       {
         path: 'sem3',
         component: Semester3Component
+      },
+      {
+        path: 'stat',
+        component: StatisticsComponent
       }
 
     ])
