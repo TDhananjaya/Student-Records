@@ -13,6 +13,8 @@ import { Semester2Component } from './semester2/semester2.component';
 import { Semester3Component } from './semester3/semester3.component';
 import { StatisticsComponent } from './statistics/statistics.component';
 import { AvarageComponent } from './avarage/avarage.component';
+import { Avgsub2Component } from './avgsub2/avgsub2.component';
+import { Avgsub3Component } from './avgsub3/avgsub3.component';
 
 @NgModule({
   
@@ -25,7 +27,9 @@ import { AvarageComponent } from './avarage/avarage.component';
     Semester2Component,
     Semester3Component,
     StatisticsComponent,
-    AvarageComponent
+    AvarageComponent,
+    Avgsub2Component,
+    Avgsub3Component
   ],
   imports: [
     BrowserModule,
@@ -58,6 +62,18 @@ import { AvarageComponent } from './avarage/avarage.component';
       {
         path: 'stat',
         component: StatisticsComponent
+      },
+      {
+        path: 'avg',
+        component: AvarageComponent
+      },
+      {
+        path: 'avgsub2',
+        component: Avgsub2Component
+      },
+      {
+        path: 'avgsub3',
+        component: Avgsub3Component
       }
 
     ])
