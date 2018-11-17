@@ -15,6 +15,9 @@ import { StatisticsComponent } from './statistics/statistics.component';
 import { AvarageComponent } from './avarage/avarage.component';
 import { Avgsub2Component } from './avgsub2/avgsub2.component';
 import { Avgsub3Component } from './avgsub3/avgsub3.component';
+import { RankComponent } from './rank/rank.component';
+import { Ranks2Component } from './ranks2/ranks2.component';
+import { Ranks3Component } from './ranks3/ranks3.component';
 
 @NgModule({
   
@@ -29,7 +32,10 @@ import { Avgsub3Component } from './avgsub3/avgsub3.component';
     StatisticsComponent,
     AvarageComponent,
     Avgsub2Component,
-    Avgsub3Component
+    Avgsub3Component,
+    RankComponent,
+    Ranks2Component,
+    Ranks3Component
   ],
   imports: [
     BrowserModule,
@@ -74,6 +80,18 @@ import { Avgsub3Component } from './avgsub3/avgsub3.component';
       {
         path: 'avgsub3',
         component: Avgsub3Component
+      },
+      {
+        path: 'rank',
+        component: RankComponent
+      },
+      {
+        path: 'ranks2',
+        component: Ranks2Component
+      },
+      {
+        path: 'ranks3',
+        component: Ranks3Component
       }
 
     ])

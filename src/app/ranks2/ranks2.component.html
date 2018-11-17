@@ -35,24 +35,24 @@
 
           <button mdbDropdownToggle mdbBtn color="primary" class="dropdown-toggle waves-light" type="button"
             mdbWavesEffect>
-            Semester 2
+            Subject 2
           </button>
         
         
           <div class="dropdown-menu dropdown-primary">
             <!-- <a class="dropdown-item" href="#">Semester 1</a> -->
-            <a class="dropdown-item" routerLink='/addmarks' href="#">Semester 1</a>
-            <a class="dropdown-item" routerLink='/sem3' href="#">Semester 3</a>
+            <a class="dropdown-item" routerLink='/rank' href="#">Subject 1</a>
+            <a class="dropdown-item" routerLink='/ranks3'href="#">Subject 3</a>
           </div>
         </div>
-        <a routerLink='/home'> <button type="button" mdbBtn color="default" mdbWavesEffect>Back</button></a>
+        <a routerLink='/stat'> <button type="button" mdbBtn color="default" mdbWavesEffect>Back</button></a>
     </div>
 
 
 <!-- Editable table -->
 <div class="card">
   
-    <h3 class="card-header text-center font-weight-bold text-uppercase py-4">Semester 02 Student Marks</h3>
+    <h3 class="card-header text-center font-weight-bold text-uppercase py-4">Subject 02 Student Rank List</h3>
     
     <div class="card-body">
       <div id="table" class="table-editable">
@@ -65,16 +65,12 @@
           <tr>
             <th class="text-center">Student Name</th>
             <th class="text-center">Index Number</th>
-            <th class="text-center">Subject 01</th>
-            <th class="text-center">Subject 02</th>
-            <th class="text-center">Subject 03</th>
+            <th class="text-center">Rank</th>
           </tr>
 
           <tr>
               <th class="text-center">Student 01</th>
               <th class="text-center">Std 01</th>
-              <th class="text-center">00</th>
-              <th class="text-center">00</th>
               <th class="text-center">00</th>
             </tr>
 
@@ -82,15 +78,11 @@
                 <th class="text-center">Student 02</th>
                 <th class="text-center">Std 02</th>
                 <th class="text-center">00</th>
-                <th class="text-center">00</th>
-                <th class="text-center">00</th>
               </tr>
 
               <tr>
                   <th class="text-center">Student 03</th>
-                  <th class="text-center">Std 02</th>
-                  <th class="text-center">00</th>
-                  <th class="text-center">00</th>
+                  <th class="text-center">Std 03</th>
                   <th class="text-center">00</th>
                 </tr>
 
@@ -98,15 +90,11 @@
                     <th class="text-center">Student 04</th>
                     <th class="text-center">Std 04</th>
                     <th class="text-center">00</th>
-                    <th class="text-center">00</th>
-                    <th class="text-center">00</th>
                   </tr>
 
                   <tr>
                       <th class="text-center">Student 05</th>
                       <th class="text-center">Std 05</th>
-                      <th class="text-center">00</th>
-                      <th class="text-center">00</th>
                       <th class="text-center">00</th>
                     </tr>
 
@@ -114,15 +102,11 @@
                         <th class="text-center">Student 06</th>
                         <th class="text-center">Std 06</th>
                         <th class="text-center">00</th>
-                        <th class="text-center">00</th>
-                        <th class="text-center">00</th>
                       </tr>
 
                       <tr>
                           <th class="text-center">Student 07</th>
                           <th class="text-center">Std 07</th>
-                          <th class="text-center">00</th>
-                          <th class="text-center">00</th>
                           <th class="text-center">00</th>
                         </tr>
 
@@ -130,15 +114,11 @@
                             <th class="text-center">Student 08</th>
                             <th class="text-center">Std 08</th>
                             <th class="text-center">00</th>
-                            <th class="text-center">00</th>
-                            <th class="text-center">00</th>
                           </tr>
 
                           <tr>
                               <th class="text-center">Student 09</th>
                               <th class="text-center">Std 09</th>
-                              <th class="text-center">00</th>
-                              <th class="text-center">00</th>
                               <th class="text-center">00</th>
                             </tr>
 
@@ -146,16 +126,12 @@
                                 <th class="text-center">Student 10</th>
                                 <th class="text-center">Std 10</th>
                                 <th class="text-center">00</th>
-                                <th class="text-center">00</th>
-                                <th class="text-center">00</th>
                               </tr>
 
           <tr *ngFor="let person of personList; let id = index">
             <td contenteditable="true" (keyup)="changeValue(id, 'name', $event)" (blur)="updateList(id, 'name', $event)">{{person.name}}</td>
             <td contenteditable="true" (keyup)="changeValue(id, 'age', $event)" (blur)="updateList(id, 'age', $event)">{{person.age}}</td>
             <td contenteditable="true" (keyup)="changeValue(id, 'companyName', $event)" (blur)="updateList(id, 'companyName', $event)">{{person.companyName}}</td>
-            <td contenteditable="true" (keyup)="changeValue(id, 'country', $event)" (blur)="updateList(id, 'country', $event)">{{person.country}}</td>
-            <td contenteditable="true" (keyup)="changeValue(id, 'city', $event)" (blur)="updateList(id, 'city', $event)">{{person.city}}</td>
             <td>
               <span class="table-up">
                 <a class="indigo-text">
