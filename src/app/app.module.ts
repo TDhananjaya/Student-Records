@@ -9,6 +9,9 @@ import { HomeComponent } from './home/home.component';
 import { AddStudentComponent } from './add-student/add-student.component';
 import { AddMarksComponent } from './add-marks/add-marks.component';
 
+import { Semester2Component } from './semester2/semester2.component';
+import { Semester3Component } from './semester3/semester3.component';
+
 @NgModule({
   
   declarations: [
@@ -16,7 +19,9 @@ import { AddMarksComponent } from './add-marks/add-marks.component';
     LoginComponent,
     HomeComponent,
     AddStudentComponent,
-    AddMarksComponent
+    AddMarksComponent,
+    Semester2Component,
+    Semester3Component
   ],
   imports: [
     BrowserModule,
@@ -37,6 +42,14 @@ import { AddMarksComponent } from './add-marks/add-marks.component';
       {
         path: 'addmarks',
         component: AddMarksComponent
+      },
+      {
+        path: 'sem2',
+        component: Semester2Component
+      },
+      {
+        path: 'sem3',
+        component: Semester3Component
       }
 
     ])
